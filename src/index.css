@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply text-slate-900 dark:text-slate-100;
+  }
+  
+  .prose pre {
+    @apply bg-slate-100 dark:bg-white/10 rounded-lg;
+  }
+  
+  .prose code {
+    @apply text-purple-600 dark:text-purple-300;
+  }
+  
+  .prose a {
+    @apply text-purple-600 hover:text-purple-700 dark:text-purple-300 dark:hover:text-purple-200;
+  }
+}
